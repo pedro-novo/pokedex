@@ -53,7 +53,7 @@ const Pagination = ({ page, size, count }: Props) => {
   }
 
   return (
-    <div className="mt-6 flex items-center justify-between gap-2">
+    <div className="mt-6 mx-auto max-w-7xl flex items-center justify-end gap-2">
       <div>
         <p className="text-white text-xs">
           Showing <span className="font-bold">{page * size + 1}</span> of <span className="font-bold">{count}</span>{" "}

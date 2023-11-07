@@ -12,14 +12,10 @@ export const metadata: Metadata = {
   description: "Pedro's Pokedex",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-900`}>
+      <body className={`${inter.className} bg-[#FFFFF0]`}>
         <Navbar />
         {children}
       </body>

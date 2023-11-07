@@ -1,6 +1,6 @@
 import React from "react";
 import PokemonList from "./pokemon-list";
-import Pagination from "@/common/components/navbar/pagination/pagination";
+import Pagination from "@/common/components/pagination/pagination";
 import { BASE_URL } from "@/common/constants/constants";
 import { PaginatedPokemon } from "@/common/types/pokemon";
 
@@ -21,8 +21,8 @@ export default async function Pokedex({ searchParams }: { searchParams: { page: 
     <section>
       <div className="mt-10 px-4 sm:px-8 lg:px-12">
         <h1 className="text-white text-4xl uppercase text-center font-bold">Pokedex</h1>
-        <PokemonList pokemons={results} />
         <Pagination page={page} size={size} count={count} />
+        <PokemonList pokemons={results} />
       </div>
     </section>
   );

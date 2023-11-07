@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav>
-      <div className="w-full px-8 py-4 flex items-center justify-between border-b border-b-gray-600 bg-gray-800">
+      <div className="w-full px-8 py-4 flex items-center justify-between border-b border-b-orange-800 bg-orange-900">
         <Link href="/">
           <h1 className="text-4xl font-bold uppercase text-white">Pokedex</h1>
         </Link>
