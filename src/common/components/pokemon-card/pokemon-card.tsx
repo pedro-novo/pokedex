@@ -46,7 +46,7 @@ export default async function PokemonCard({ url }: Props) {
   return (
     <div
       className={classNames(
-        "w-64 h-96 py-2 px-2 rounded border-8 border-yellow-300 translate-y-0 delay-50 transition-all hover:-translate-y-5 hover:scale-110",
+        "w-56 h-80 py-2 px-2 rounded border-8 border-yellow-300 translate-y-0 delay-50 transition-all hover:-translate-y-5 hover:scale-110",
         colorRecord[pokemonSpecies.color.name || "gray"]
       )}
     >
@@ -64,7 +64,7 @@ export default async function PokemonCard({ url }: Props) {
 
       <CardDivider />
 
-      <div className="mt-2 flex items-start justify-center flex-col gap-1">
+      {/* <div className="mt-2 flex items-start justify-center flex-col gap-1">
         <div className="flex gap-2">
           <Image src="/happy-pokemon.png" width={18} height={18} quality={100} alt="base hapiness" />
           <p className="text-[12px] font-semibold">{pokemonSpecies.base_happiness || 0}</p>
@@ -73,7 +73,7 @@ export default async function PokemonCard({ url }: Props) {
           <Image src="/pokeball.png" width={18} height={18} quality={100} alt="base hapiness" className="w-4 h-4" />
           <p className="text-[12px] font-semibold">{pokemonSpecies.capture_rate || 0}%</p>
         </div>
-      </div>
+      </div> */}
 
       <div>{/* HABILITIES */}</div>
     </div>
