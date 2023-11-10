@@ -63,19 +63,6 @@ export default async function PokemonCard({ url }: Props) {
       <CardStats stats={pokemon.stats} />
 
       <CardDivider />
-
-      {/* <div className="mt-2 flex items-start justify-center flex-col gap-1">
-        <div className="flex gap-2">
-          <Image src="/happy-pokemon.png" width={18} height={18} quality={100} alt="base hapiness" />
-          <p className="text-[12px] font-semibold">{pokemonSpecies.base_happiness || 0}</p>
-        </div>
-        <div className="flex gap-2">
-          <Image src="/pokeball.png" width={18} height={18} quality={100} alt="base hapiness" className="w-4 h-4" />
-          <p className="text-[12px] font-semibold">{pokemonSpecies.capture_rate || 0}%</p>
-        </div>
-      </div> */}
-
-      <div>{/* HABILITIES */}</div>
     </div>
   );
 }
